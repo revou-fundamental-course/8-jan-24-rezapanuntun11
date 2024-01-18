@@ -1,0 +1,132 @@
+* {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #40a2d8;
+  margin: 0;
+  padding: 10px;
+  font-size: x-large;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  height: 50px;
+  margin: 0;
+}
+
+#logo {
+  font-weight: 700;
+  font-family: Verdana, sans-serif;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+}
+
+.header span {
+  font-weight: 500;
+  margin: 10px;
+}
+
+.main {
+  padding: 20px;
+  margin: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #40a2d8;
+  padding: 20px;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+.calcButton {
+  color: #ffffff;
+  background-color: #40a2d8;
+  font-weight: 600;
+}
+
+.calcButton:hover {
+  background-color: #2f8bc9;
+}
+
+.reset {
+  background-color: orange;
+  font-weight: 600;
+}
+
+.reset:hover {
+  background-color: rgb(214, 140, 2);
+}
+
+.hidden {
+  display: none;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.tab:hover {
+  background-color: #d5d5d5;
+}
+
+.active-tab {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.active-tab:hover {
+  background-color: #2d83bc;
+}
+
+#explanation {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+#areaResult {
+  margin: 20px;
+}
+
+#perimeterResult {
+  margin: 20px;
+}

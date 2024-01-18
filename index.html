@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Matematik</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/calc-logo.png">
+</head>
+
+<body>
+  <div class="header">
+    <img src="/img/calc-logo.png" alt="Calculator Logo">
+    <span id="logo">Katik</span><span> Kalkulator Matematik</span>
+  </div>
+  <div class="main">
+    <h2>Welcome to Katik</h2>
+    <p>Hai Sobat selamat datang di Katik</p>
+    <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling persegi</p>
+
+    <div class="tab" id="areaTab" onclick="showTab('areaTab')">Hitung Luas</div>
+    <div class="tab" id="perimeterTab" onclick="showTab('perimeterTab')">Hitung Keliling</div>
+    <div class="image"><img src="/img/persegi.png" alt="Gambar Persegi"></div>
+
+
+    <!-- Rumus Hitung Luas-->
+
+    <div id="areaTabContent">
+
+      <div id="explanation">
+        <h3>Rumus Luas Persegi:</h3>
+        <p>Luas = sisi * sisi</p>
+      </div>
+
+      <label for="sideLength">Panjang Sisi:</label>
+      <input type="number" id="sideLength" placeholder="Masukkan panjang sisi" required>
+      <button class="calcButton" onclick="calculate('area')">Hitung Luas</button>
+      <button class="reset" onclick="resetInput('sideLength', 'areaResult', 'areaExample')">Reset</button>
+
+      <div id="areaResult" class="hidden">
+        <p>Luas = sisi * sisi</p>
+        <p id="areaExample"> </p>
+        <p>Luas Persegi = <span id="areaValue"></span></p>
+      </div>
+    </div>
+
+    <!-- Rumus Hitung Keliling-->
+
+    <div id="perimeterTabContent" class="hidden">
+
+      <div id="explanation">
+        <h3>Rumus Keliling Persegi:</h3>
+        <p>Keliling = 4 * sisi</p>
+      </div>
+
+      <label for="sideLengthPerimeter">Panjang Sisi:</label>
+      <input type="number" id="sideLengthPerimeter" placeholder="Masukkan panjang sisi" required>
+
+      <button class="calcButton" onclick="calculate('perimeter')">Hitung Keliling</button>
+      <button class="reset"
+        onclick="resetInput('sideLengthPerimeter', 'perimeterResult', 'perimeterExample')">Reset</button>
+
+      <div id="perimeterResult" class="hidden">
+        <p>Keliling = 4 * sisi</p>
+        <p id="perimeterExample"> </p>
+        <p>Keliling Persegi = <span id="perimeterValue"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/script.js">
+  </script>
+
+  <footer>
+    <p>Developed By <a href="https://www.linkedin.com/in/rezapanuntun/">Reza Panuntun &#9889</a></p>
+  </footer>
+</body>
+
+</html>
